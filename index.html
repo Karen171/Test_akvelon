@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <div class="title">
+            <h2 class="title__h2">Invoices</h2>
+            <span class="title__bar"></span>
+          </div>
+        </header>
+        <main class="main">
+          <div>
+            <div class="actions">
+              <h3 class="actions__h3">Actions</h3>
+              <button class="actions__btn">Add new</button>
+            </div>
+            <div class="invoices">
+              <h3 class="invoices__h3">Invoices</h3>
+              <table class="invoices__table">
+                <thead class="table-thead">
+                  <tr>
+                    <th>Create</th>
+                    <th>No</th>
+                    <th>Supply</th>
+                    <th>Comment</th>
+                  </tr>
+                </thead>
+                <tbody class="table-tbody"></tbody>
+              </table>
+              <div class="invoices__modal">
+                <form class="invoices__form" name="reg-form">
+                  <div>
+                    <div class="form__inner">
+                      <div>
+                        <p>Number:</p>
+                        <input
+                          type="number"
+                          name="number"
+                          class="field"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <p>Invoice Date:</p>
+                        <input
+                          type="date"
+                          name="invoice-date"
+                          class="field"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <p>Supply Date:</p>
+                        <input
+                          type="date"
+                          name="supply-date"
+                          class="field"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p>Comment:</p>
+                      <textarea
+                        class="form__textarea field"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <input class="form__btn" type="submit" value="Save" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/js/script.js"></script>
+</html>

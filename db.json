@@ -1,0 +1,18 @@
+{
+  "invoices": [
+    {
+      "_id": 725006360,
+      "number": "INV-525235",
+      "date_created": "23-11-2015",
+      "date_supplied": "20-06-2016",
+      "comment": "ad do labore nisi qui dolore Lorem sint tempor velit"
+    },
+    {
+      "id": 113872947,
+      "number": "INV-122222222",
+      "date_created": "2021-03-03",
+      "date_supplied": "2021-03-19",
+      "comment": "testtest"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: rgb(230, 230, 230);
+  color: rgb(94, 94, 94);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #000;
+}
+
+.wrapper {
+  max-width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  margin: 30px 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.title__h2 {
+  margin: 0 15px;
+}
+
+.active {
+  min-width: 155px;
+}
+
+.title__bar {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(161, 161, 161);
+}
+
+.title__h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: rgb(161, 161, 161);
+}
+
+.actions {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.actions__btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100px;
+  background-color: rgb(73, 91, 255);
+  color: #fff;
+}
+
+.actions__h3 {
+  margin: 0 0 10px;
+}
+
+.invoices {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.invoices__table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+.invoices__table thead {
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+}
+
+.invoices__table th {
+  padding: 15px;
+}
+
+.invoices__table td:nth-child(2) {
+  color: blue;
+}
+
+.invoices__table td {
+  max-width: 200px;
+  padding: 15px;
+  border-bottom: 1px rgb(230, 230, 230) solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invoices__modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.invoices__form > div {
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.invoices__form p {
+  margin: 0;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  font-size: 1.2em;
+}
+
+.form__btn {
+  float: right;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  width: 75px;
+  background-color: rgb(73, 91, 255);
+  color: #fff;
+}
+
+.form__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__inner div input {
+  padding: 5px;
+  width: 100%;
+}
+
+.form__inner div {
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.form__inner div:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.form__inner .error {
+  margin: 0;
+}
+
+
+@media (max-width: 768px){
+  .form__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__inner div {
+    width: 100%;
+  }
+  .form__btn {
+    width: 100%;
+  }
+}
